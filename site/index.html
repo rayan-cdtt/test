@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Vortex Esport — Club esport bordelais</title>
+  <meta name="description" content="Vortex Esport, club esport bordelais sur Nova Rift. Roster, calendrier des matchs et actualites de l'equipe.">
+  <link rel="icon" href="images/logo-vortex.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Chakra+Petch:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+    <script src="/tarteaucitron/tarteaucitron.min.js"></script>
+
+        <script type="text/javascript">
+        tarteaucitron.init({
+    	  "privacyUrl": "", /* Url de la politique de confidentialité */
+          "bodyPosition": "top", /* top place le bandeau de consentement au début du code html, mieux pour l'accessibilité */
+
+    	  "hashtag": "#tarteaucitron", /* Hashtag qui permet d'ouvrir le panneau de contrôle  */
+    	  "cookieName": "tarteaucitron", /* Nom du cookie (uniquement lettres et chiffres) */
+    
+    	  "orientation": "middle", /* Position de la bannière (top - bottom - popup - banner) */
+       
+          "groupServices": true, /* Grouper les services par catégorie */
+          "showDetailsOnClick": true, /* Cliquer pour ouvrir la description */
+          "serviceDefaultState": "wait", /* Statut par défaut (true - wait - false) */
+                           
+    	  "showAlertSmall": false, /* Afficher la petite bannière en bas à droite */
+          "showTitleBanner": false, /* Afficher le titre dans le bandeau haut/bas */
+    	  "cookieslist": false, /* Afficher la liste des cookies via une mini bannière */
+          "cookieslistEmbed": false, /* Afficher la liste des cookies dans le panneau de contrôle */
+                           
+          "closePopup": true, /* Afficher un X pour fermer la bannière */
+
+          "showIcon": true, /* Afficher un cookie pour ouvrir le panneau */
+          //"iconSrc": "", /* Optionnel: URL ou image en base64 */
+          "iconPosition": "BottomRight", /* Position de l'icons: (BottomRight - BottomLeft - TopRight - TopLeft) */
+
+    	  "adblocker": false, /* Afficher un message si un Adblocker est détecté */
+                           
+          "DenyAllCta" : true, /* Afficher le bouton Tout refuser */
+          "AcceptAllCta" : true, /* Afficher le bouton Tout accepter */
+          "highPrivacy": true, /* Attendre le consentement */
+          "alwaysNeedConsent": false, /* Demander le consentement même pour les services "Privacy by design" */
+                           
+    	  "handleBrowserDNTRequest": false, /* Refuser tout par défaut si Do Not Track est activé sur le navigateur */
+
+    	  "removeCredit": false, /* Retirer le lien de crédit vers tarteaucitron.io */
+    	  "moreInfoLink": true, /* Afficher le lien En savoir plus */
+
+          "useExternalCss": false, /* Mode expert : désactiver le chargement des fichiers .css tarteaucitron */
+          "useExternalJs": false, /* Mode expert : désactiver le chargement des fichiers .js tarteaucitron */
+
+    	  //"cookieDomain": ".my-multisite-domaine.fr", /* Optionnel: domaine principal pour partager le consentement avec des sous domaines */
+                          
+          "readmoreLink": "", /* Changer le lien En savoir plus par défaut */
+
+          "mandatory": true, /* Afficher un message pour l'utilisation de cookies obligatoires */
+          "mandatoryCta": false, /* Afficher un bouton pour les cookies obligatoires (déconseillé) */
+    
+          //"customCloserId": "", /* Optionnel a11y: ID personnalisé pour ouvrir le panel */
+          
+          "googleConsentMode": true, /* Activer le Google Consent Mode v2 pour Google ads & GA4 */
+          "bingConsentMode": true, /* Activer le Bing Consent Mode pour Clarity & Bing Ads */
+          "pianoConsentMode": true, /* Activer le Consent Mode pour Piano Analytics */
+          "pianoConsentModeEssential": false, /* Activer par défaut le mode Essential de Piano */
+          "piwikConsentMode": true, /* Activer le Consent Mode pour Piwik */
+          "softConsentMode": false, /* Soft consent mode (le consentement est requis pour charger les tags) */
+
+          "dataLayer": false, /* Envoyer un événement dans dataLayer avec le statut des services */
+          "serverSide": false, /* Server side seulement, les tags ne sont pas chargé côté client */
+          
+          "partnersList": true /* Afficher le détail du nombre de partenaires sur la bandeau */
+        });
+        </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QM2VXK4TD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7QM2VXK4TD');
+  </script>
+</head>
+<body>
+
+  <header class="entete">
+    <div class="conteneur entete-interieur">
+      <a href="index.html" class="marque">
+        <img src="images/logo-vortex.svg" width="38" height="38">
+        <span class="marque-nom">VORTEX<span>.</span></span>
+      </a>
+
+      <nav class="nav" id="nav-principale">
+        <a href="index.html" class="actif" tabindex="5">Accueil</a>
+        <a href="roster.html" tabindex="3">Roster</a>
+        <a href="matchs.html" tabindex="1">Matchs</a>
+        <a href="boutique.html" tabindex="4">Boutique</a>
+        <a href="contact.html" tabindex="2">Contact</a>
+      </nav>
+
+      <div class="burger" onclick="basculerMenu()">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="heros">
+    <div class="conteneur heros-grille">
+      <div>
+        <span class="badge-live">Saison 2025-2026 en cours</span>
+        <h1>ON NE JOUE PAS POUR<br><em>PARTICIPER.</em></h1>
+        <p class="heros-texte">
+          Vortex Esport est un club bordelais fonde en 2019. Cinq joueurs, un staff de trois personnes,
+          une salle d'entrainement rue Fondaudege et une ambition simple pour la saison : la finale
+          de la Coupe de France Nova Rift.
+        </p>
+        <div class="heros-actions">
+          <a href="matchs.html" class="btn btn-primaire">Voir le calendrier</a>
+          <a href="roster.htm" class="btn btn-secondaire">Decouvrir le roster</a>
+        </div>
+      </div>
+
+      <div class="carte-match">
+        <div class="carte-match-haut">
+          <span class="surtitre">Prochain match</span>
+          <span class="legende">Samedi 18 octobre &middot; 20h00</span>
+        </div>
+
+        <div class="affiche">
+          <div class="affiche-equipe">
+            <div class="affiche-blason">VTX</div>
+            <span>VORTEX</span>
+          </div>
+          <div class="affiche-vs">VS</div>
+          <div class="affiche-equipe">
+            <div class="affiche-blason adverse">LYN</div>
+            <span>LYON NINE</span>
+          </div>
+        </div>
+
+        <div class="compte-a-rebours" id="compte-a-rebours" data-date="2026-10-18T20:00:00">
+          <div><strong data-unite="jours">--</strong><span class="legende">Jours</span></div>
+          <div><strong data-unite="heures">--</strong><span class="legende">Heures</span></div>
+          <div><strong data-unite="minutes">--</strong><span class="legende">Minutes</span></div>
+        </div>
+
+        <p style="margin-top:20px">
+          <a href="https://www.twitch.tv/vortexesport-officiel-nova" target="_blank">Suivre le match en direct</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur">
+    <div class="stats-bande">
+      <div><strong class="chiffre">14</strong><span>Titres remportes</span></div>
+      <div><strong class="chiffre">68%</strong><span>Taux de victoire</span></div>
+      <div><strong class="chiffre">39500</strong><span>Euros de gains 2025</span></div>
+      <div><strong class="chiffre">12400</strong><span>Abonnes Twitch</span></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="section-entete">
+        <span class="surtitre">Le cinq majeur</span>
+        <h1>Nos joueurs</h1>
+        <p>
+          Cinq titulaires sur Nova Rift, encadres par un coach et un analyste.
+          Moyenne d'age : 21 ans. Quatre d'entre eux sont passes par le centre de formation du club.
+        </p>
+      </div>
+
+      <div class="roster-grille">
+
+        <article class="carte-joueur">
+          <img src="images/joueurs/kyzo.jpg">
+          <div class="carte-joueur-corps">
+            <span class="poste">Top laner</span>
+            <h3 class="pseudo">KYZO</h3>
+            <span class="civil">Lucas Ferreira &middot; 22 ans</span>
+            <p class="bio">
+              Capitaine depuis 2023. Profil solide, tres bon en phase de laning, reconnu pour sa
+              lecture des rotations adverses. Il tient le poste depuis la creation du club.
+            </p>
+            <div class="reseaux">
+              <a href="https://twitch.tv/kyzo_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1L1 4v10h4v2h2l2-2h3l3-3V1H3zm11 8l-2 2H9l-2 2v-2H4V3h10v6z"/></svg></a>
+              <a href="https://x.com/kyzo_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.6 1h2.4l-5.3 6 6.2 8h-4.8l-3.8-4.9L2.9 15H.5l5.6-6.4L.2 1H5l3.4 4.5L12.6 1z"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-joueur">
+          <img src="images/joueurs/nael.jpg" alt="photo">
+          <div class="carte-joueur-corps">
+            <span class="poste">Jungler</span>
+            <h3 class="pseudo">NAEL</h3>
+            <span class="civil">Nael Benhaddou &middot; 20 ans</span>
+            <p class="bio">
+              Arrive de Toulouse en 2024. Style agressif, specialiste des invades en debut de partie.
+              Meilleur ratio d'objectifs neutres du championnat la saison derniere.
+            </p>
+            <div class="reseaux">
+              <a href="https://twitch.tv/nael_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1L1 4v10h4v2h2l2-2h3l3-3V1H3zm11 8l-2 2H9l-2 2v-2H4V3h10v6z"/></svg></a>
+              <a href="https://x.com/nael_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.6 1h2.4l-5.3 6 6.2 8h-4.8l-3.8-4.9L2.9 15H.5l5.6-6.4L.2 1H5l3.4 4.5L12.6 1z"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-joueur">
+          <img src="images/joueurs/sombra.jpg" alt="image de la photo du joueur SOMBRA de l'equipe Vortex Esport en train de jouer devant son ecran de PC gaming photo">
+          <div class="carte-joueur-corps">
+            <span class="poste">Mid laner</span>
+            <h3 class="pseudo">SOMBRA</h3>
+            <span class="civil">Mathis Roux &middot; 21 ans</span>
+            <p class="bio">
+              Le joueur le plus titre du roster. Trois MVP en 2025. Il prepare en parallele un BTS SIO
+              et s'entraine quinze heures par semaine.
+            </p>
+            <div class="reseaux">
+              <a href="https://twitch.tv/sombra_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1L1 4v10h4v2h2l2-2h3l3-3V1H3zm11 8l-2 2H9l-2 2v-2H4V3h10v6z"/></svg></a>
+              <a href="https://x.com/sombra_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.6 1h2.4l-5.3 6 6.2 8h-4.8l-3.8-4.9L2.9 15H.5l5.6-6.4L.2 1H5l3.4 4.5L12.6 1z"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-joueur">
+          <img src="images/joueurs/tarek.jpg">
+          <div class="carte-joueur-corps">
+            <span class="poste">Tireur</span>
+            <h3 class="pseudo">TAREK</h3>
+            <span class="civil">Tarek Amrani &middot; 23 ans</span>
+            <p class="bio">
+              Le plus experimente. Passe par deux clubs espagnols avant de rejoindre Bordeaux en 2022.
+              Il encadre les joueurs du centre de formation le mercredi.
+            </p>
+            <div class="reseaux">
+              <a href="https://twitch.tv/tarek_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1L1 4v10h4v2h2l2-2h3l3-3V1H3zm11 8l-2 2H9l-2 2v-2H4V3h10v6z"/></svg></a>
+              <a href="https://x.com/tarek_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.6 1h2.4l-5.3 6 6.2 8h-4.8l-3.8-4.9L2.9 15H.5l5.6-6.4L.2 1H5l3.4 4.5L12.6 1z"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-joueur">
+          <img src="images/joueurs/wenzo.jpg" alt="Portrait de WENZO, support de Vortex Esport">
+          <div class="carte-joueur-corps">
+            <span class="poste">Support</span>
+            <h3 class="pseudo">WENZO</h3>
+            <span class="civil">Enzo Vidal &middot; 20 ans</span>
+            <p class="bio">
+              Recrute en 2025 apres une saison remarquee en division 2. Voix de l'equipe en jeu,
+              c'est lui qui appelle les engagements.
+            </p>
+            <div class="reseaux">
+              <a href="https://twitch.tv/wenzo_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1L1 4v10h4v2h2l2-2h3l3-3V1H3zm11 8l-2 2H9l-2 2v-2H4V3h10v6z"/></svg></a>
+              <a href="https://x.com/wenzo_vtx"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.6 1h2.4l-5.3 6 6.2 8h-4.8l-3.8-4.9L2.9 15H.5l5.6-6.4L.2 1H5l3.4 4.5L12.6 1z"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p style="margin-top:30px">
+        <a href="roster.html">Cliquez ici</a> pour consulter les fiches detaillees du roster.
+      </p>
+    </div>
+  </section>
+
+  <section class="section bande-sombre">
+    <div class="conteneur">
+      <div class="section-entete">
+        <span class="surtitre">Resultats</span>
+        <h3>Palmares de la saison 2025</h3>
+      </div>
+      <img src="images/palmares-2025.svg">
+      <p style="margin-top:22px"><a href="matchs.html#classement-2025">En savoir plus</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur duo">
+      <div class="cadre-video">
+       <div class="youtube_player" data-videoID="https://www.youtube.com/embed/aqz-KE-bpKQ" data-width="width" data-height="height" data-theme="theme (dark )" data-rel="rel (1)" data-controls="controls (1)" data-showinfo="showinfo (1)" data-autoplay="autoplay (0)" data-mute="mute (0 | 1)" srcdoc="srcdoc" data-loop="loop (0)" data-loading="loading (0)" data-start="start" data-end="end"></div><script>
+(tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+</script>
+      </div>
+      <div>
+        <span class="surtitre">Media</span>
+        <h2 style="margin:14px 0 16px">Le best-of de la demi-finale</h2>
+        <p style="color:var(--texte-2)">
+          Quinze minutes de resume commente par le staff, tournees dans la salle du club apres la
+          rencontre contre Lyon Nine. La video est aussi disponible sur notre chaine Twitch en rediffusion.
+        </p>
+        <p style="margin-top:22px"><a href="https://www.youtube.com/@vortexesport-bordeaux-officiel" target="_blank">En savoir plus</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="section-entete">
+        <span class="surtitre">En images</span>
+        <h2>La salle et les deplacements</h2>
+      </div>
+      <!-- TODO : visuels recuperes sur Google Images, a remplacer avant la mise en ligne -->
+      <img src="images/galerie/scene-esport.jpg" class="bandeau-large" alt="Les equipes de la scene esport francaise">
+
+      <div class="galerie">
+        <figure><img src="images/galerie/salle-entrainement.jpg"></figure>
+        <figure><img src="images/galerie/lan-nouvelle-aquitaine.jpg" alt="image"></figure>
+        <figure><img src="images/galerie/finale-paris.jpg"></figure>
+        <figure><img src="https://cdn.vortex-esport-photos.fr/2025/podium-bordeaux.jpg" alt="L'equipe sur le podium a Bordeaux"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bande-sombre">
+    <div class="conteneur">
+      <p class="surtitre">Ils nous soutiennent</p>
+      <div class="sponsors">
+        <img src="images/sponsors/kilowatt.svg" alt="Kilowatt Energy">
+        <img src="images/sponsors/axiom.svg" alt="Axiom Gear">
+        <img src="images/sponsors/bordolink.svg" alt="Bordolink Fibre">
+        <img src="images/sponsors/nordhost.svg" alt="Nordhost Serveurs">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="newsletter">
+        <div>
+          <h2>La lettre du club</h2>
+          <p style="color:var(--texte-2);margin-top:12px">
+            Le calendrier, les resultats et les coulisses, un mail toutes les deux semaines.
+            Pas de publicite, desinscription en un clic.
+          </p>
+        </div>
+        <div>
+          <div class="newsletter-form">
+            <input type="email" id="champ-newsletter" placeholder="Votre adresse e-mail">
+            <button class="btn btn-primaire" onclick="inscrireNewsletter()">OK</button>
+          </div>
+          <p id="retour-newsletter" class="legende" style="margin-top:10px"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div>
+          <div class="marque">
+            <img src="images/logo-vortex.svg" alt="" width="38" height="38">
+            <span class="marque-nom">VORTEX<span>.</span></span>
+          </div>
+          <p class="pied-intro">
+            Association loi 1901 fondee en 2019 a Bordeaux.
+            14 rue Fondaudege, 33000 Bordeaux.
+          </p>
+        </div>
+        <div>
+          <h4>Le club</h4>
+          <ul>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="matchs.html">Matchs</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions legales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialite</a></li>
+            <li><a href="cgv.html">Conditions generales de vente</a></li>
+            <li><a href="https://www.vortex-esport-boutique-officielle.fr/">Boutique partenaire</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous suivre</h4>
+          <ul>
+            <li><a href="https://www.twitch.tv/vortexesport-officiel-nova" target="_blank">Twitch</a></li>
+            <li><a href="https://x.com/vortexesport_bdx">X</a></li>
+            <li><a href="http://www.esport-nouvelle-aquitaine.fr/clubs/vortex">Ligue Nouvelle-Aquitaine</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Vortex_Esport_Club_Bordeaux_2019">Notre page Wikipedia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied-bas">
+        <span>&copy; 2026 Vortex Esport. Tous droits reserves.</span>
+        <span>Site realise par les etudiants du club.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

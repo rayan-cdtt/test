@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Vortex Esport</title>
+  <meta name="description" content="Contacter Vortex Esport : salle d'entrainement rue Fondaudege a Bordeaux, partenariats, essais et centre de formation.">
+  <link rel="icon" href="images/logo-vortex.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Chakra+Petch:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QM2VXK4TD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7QM2VXK4TD');
+  </script>
+</head>
+<body>
+
+  <header class="entete">
+    <div class="conteneur entete-interieur">
+      <a href="index.html" class="marque">
+        <img src="images/logo-vortex.svg" alt="Vortex Esport" width="38" height="38">
+        <span class="marque-nom">VORTEX<span>.</span></span>
+      </a>
+
+      <nav class="nav" id="nav-principale">
+        <a href="index.html">Accueil</a>
+        <a href="roster.html">Roster</a>
+        <a href="matchs.html">Matchs</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="contact.html" class="actif">Contact</a>
+      </nav>
+
+      <div class="burger" onclick="basculerMenu()">&#9776;</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section">
+      <div class="conteneur">
+        <div class="section-entete">
+          <span class="surtitre">Nous ecrire</span>
+          <h1>Contact</h1>
+          <p>
+            Partenariat, essai au centre de formation, demande presse ou simple question :
+            le club repond sous 48 heures ouvrees.
+          </p>
+        </div>
+
+        <div class="duo" style="align-items:start">
+
+          <div>
+            <div class="formulaire">
+              <div class="ligne-2">
+                <div class="champ">
+                  <input type="text" id="champ-nom" placeholder="Nom et prenom">
+                </div>
+                <div class="champ">
+                  <input type="email" id="champ-email" placeholder="Adresse e-mail">
+                </div>
+              </div>
+
+              <div class="ligne-2">
+                <div class="champ">
+                  <input type="tel" id="champ-tel" placeholder="Telephone">
+                </div>
+                <div class="champ">
+                  <select id="champ-sujet">
+                    <option value="">Objet de la demande</option>
+                    <option value="essai">Essai / centre de formation</option>
+                    <option value="partenariat">Partenariat ou sponsoring</option>
+                    <option value="presse">Demande presse</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="champ">
+                <textarea id="champ-message" placeholder="Votre message"></textarea>
+              </div>
+
+              <div class="faux-bouton" onclick="envoyerFormulaire()">Envoyer le message</div>
+              <p id="retour-formulaire" class="legende"></p>
+            </div>
+
+            <p class="legende" style="margin-top:18px">
+              Les champs nom et message sont obligatoires.
+            </p>
+          </div>
+
+          <div class="infos-contact">
+            <div class="info-bloc">
+              <h3>Salle d'entrainement</h3>
+              <p>
+                14 rue Fondaudege<br>
+                33000 Bordeaux<br>
+                Acces tramway ligne D, arret Fondaudege Muséum
+              </p>
+            </div>
+            <div class="info-bloc">
+              <h3>Ecrire au club</h3>
+              <p>
+                <a href="mailto:contact@vortex-esport.fr">contact@vortex-esport.fr</a><br>
+                Partenariats : <a href="mailto:partenariats@vortex-esport.fr">partenariats@vortex-esport.fr</a>
+              </p>
+            </div>
+            <div class="info-bloc">
+              <h3>Telephone</h3>
+              <p>
+                <a href="tel:+33556000000">05 56 00 00 00</a><br>
+                Du lundi au vendredi, 14h - 19h
+              </p>
+            </div>
+            <div class="info-bloc">
+              <h3>Centre de formation</h3>
+              <p>
+                Essais ouverts aux joueurs de 16 a 21 ans, deux sessions par an.
+                <a href="essais-2026.html">Conditions d'inscription</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section bande-sombre">
+      <div class="conteneur">
+        <div class="section-entete">
+          <span class="surtitre">Nous trouver</span>
+          <h2>La gaming house</h2>
+          <p>
+            Le club occupe depuis 2023 un plateau de 180 m&sup2; au coeur de Bordeaux :
+            dix postes de jeu, une regie de diffusion et une salle de debrief.
+          </p>
+        </div>
+
+        <div class="cadre-carte">
+          <iframe src="https://www.google.com/maps?q=14+rue+Fondaudege+33000+Bordeaux&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div>
+          <div class="marque">
+            <img src="images/logo-vortex.svg" alt="" width="38" height="38">
+            <span class="marque-nom">VORTEX<span>.</span></span>
+          </div>
+          <p class="pied-intro">
+            Association loi 1901 fondee en 2019 a Bordeaux.
+            14 rue Fondaudege, 33000 Bordeaux.
+          </p>
+        </div>
+        <div>
+          <h4>Le club</h4>
+          <ul>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="matchs.html">Matchs</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions legales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialite</a></li>
+            <li><a href="cgv.html">Conditions generales de vente</a></li>
+            <li><a href="https://www.vortex-esport-boutique-officielle.fr/">Boutique partenaire</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous suivre</h4>
+          <ul>
+            <li><a href="https://www.twitch.tv/vortexesport-officiel-nova" target="_blank">Twitch</a></li>
+            <li><a href="https://x.com/vortexesport_bdx">X</a></li>
+            <li><a href="http://www.esport-nouvelle-aquitaine.fr/clubs/vortex">Ligue Nouvelle-Aquitaine</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Vortex_Esport_Club_Bordeaux_2019">Notre page Wikipedia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied-bas">
+        <span>&copy; 2026 Vortex Esport. Tous droits reserves.</span>
+        <span>Site realise par les etudiants du club.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

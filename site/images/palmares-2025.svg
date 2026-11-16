@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+  <rect width="900" height="260" fill="#141821"/>
+  <rect x="0" y="0" width="900" height="4" fill="#FF5A1F"/>
+  <text x="40" y="58" font-family="Chakra Petch, Impact, sans-serif" font-size="26" font-weight="700" fill="#EEF1F7" letter-spacing="2">PALMARES 2025</text>
+  <g font-family="Barlow, Arial, sans-serif" font-size="19" fill="#9AA5BC">
+    <text x="40" y="108">1re place — Coupe de France Esport 2025 (Paris)</text>
+    <text x="40" y="146">2e place — Gironde Masters 2025 (Bordeaux)</text>
+    <text x="40" y="184">1re place — Nouvelle-Aquitaine League, saison 4</text>
+    <text x="40" y="222">Demi-finale — European Rift Open 2025 (Berlin)</text>
+  </g>
+  <g font-family="Chakra Petch, Impact, sans-serif" font-size="19" font-weight="700" fill="#2DE2C5">
+    <text x="700" y="108">+ 18 000 €</text>
+    <text x="700" y="146">+ 6 000 €</text>
+    <text x="700" y="184">+ 12 000 €</text>
+    <text x="700" y="222">+ 3 500 €</text>
+  </g>
+</svg>

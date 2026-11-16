@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="images/logo-vortex.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Chakra+Petch:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QM2VXK4TD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7QM2VXK4TD');
+  </script>
+</head>
+<body>
+
+  <header class="entete">
+    <div class="conteneur entete-interieur">
+      <a href="index.html" class="marque">
+        <img src="images/logo-vortex.svg" alt="Vortex Esport" width="38" height="38">
+        <span class="marque-nom">VORTEX<span>.</span></span>
+      </a>
+
+      <nav class="nav" id="nav-principale">
+        <a href="index.html">Accueil</a>
+        <a href="roster.html">Roster</a>
+        <a href="matchs.html" class="actif">Matchs</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="burger" onclick="basculerMenu()">&#9776;</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section">
+      <div class="conteneur">
+        <div class="section-entete">
+          <span class="surtitre">Saison 2025-2026</span>
+          <h1>Calendrier et resultats</h1>
+          <p>
+            Toutes les rencontres officielles du club en Nouvelle-Aquitaine League et en Coupe de
+            France Nova Rift. Les matchs sont diffuses en direct sur la chaine Twitch du club.
+          </p>
+        </div>
+
+        <div class="onglets">
+          <span class="onglet actif" data-onglet="a-venir" onclick="afficherOnglet('a-venir')">A venir</span>
+          <span class="onglet" data-onglet="resultats" onclick="afficherOnglet('resultats')">Resultats</span>
+          <span class="onglet" data-onglet="classement" onclick="afficherOnglet('classement')">Classement</span>
+        </div>
+
+        <div class="panneau" data-panneau="a-venir">
+          <table class="table-matchs">
+            <caption>Prochaines rencontres de Vortex Esport, saison 2025-2026</caption>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Competition</th>
+                <th scope="col">Adversaire</th>
+                <th scope="col">Lieu</th>
+                <th scope="col">Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="chiffre">18/10/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Lyon Nine</td>
+                <td>Bordeaux</td>
+                <td><span class="etiquette a-venir">A venir</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">25/10/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Atlantic Wolves</td>
+                <td>Nantes</td>
+                <td><span class="etiquette a-venir">A venir</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">08/11/2026</td>
+                <td>Coupe de France Nova Rift</td>
+                <td>Paris Meridian</td>
+                <td>Paris</td>
+                <td><span class="etiquette a-venir">A venir</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">22/11/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Pau Ascent</td>
+                <td>Bordeaux</td>
+                <td><span class="etiquette a-venir">A venir</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panneau" data-panneau="resultats" style="display:none">
+          <table class="table-matchs">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Competition</td>
+                <td>Adversaire</td>
+                <td>Score</td>
+                <td>Issue</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="chiffre">27/09/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Toulouse Orion</td>
+                <td class="col-score gagne">3 - 1</td>
+                <td><span class="etiquette victoire">Victoire</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">13/09/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Limoges Vanguard</td>
+                <td class="col-score gagne">3 - 0</td>
+                <td><span class="etiquette victoire">Victoire</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">30/08/2026</td>
+                <td>European Rift Open</td>
+                <td>Berlin Kraken</td>
+                <td class="col-score perdu">1 - 3</td>
+                <td><span class="etiquette defaite">Defaite</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">16/08/2026</td>
+                <td>Coupe de France Nova Rift</td>
+                <td>Marseille Delta</td>
+                <td class="col-score gagne">2 - 1</td>
+                <td><span class="etiquette victoire">Victoire</span></td>
+              </tr>
+              <tr>
+                <td class="chiffre">02/08/2026</td>
+                <td>Nouvelle-Aquitaine League</td>
+                <td>Angouleme Forge</td>
+                <td class="col-score gagne">3 - 2</td>
+                <td><span class="etiquette victoire">Victoire</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:26px">
+            <a href="resultats-2024.html">Cliquez ici</a> pour consulter les archives de la saison precedente,
+            ou consultez la <a href="https://www.lequipe.fr/Esport/vortex-esport-bordeaux-saison-2025">fiche du club sur L'Equipe</a>.
+          </p>
+        </div>
+
+        <div class="panneau" data-panneau="classement" style="display:none" id="classement">
+          <table class="table-matchs">
+            <caption>Classement de la Nouvelle-Aquitaine League au 27 septembre 2026</caption>
+            <thead>
+              <tr>
+                <th scope="col">Rang</th>
+                <th scope="col">Equipe</th>
+                <th scope="col">Joues</th>
+                <th scope="col">Victoires</th>
+                <th scope="col">Defaites</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="chiffre">1</th>
+                <td>Vortex Esport</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">9</td>
+                <td class="chiffre">3</td>
+                <td class="chiffre">27</td>
+              </tr>
+              <tr>
+                <th scope="row" class="chiffre">2</th>
+                <td>Atlantic Wolves</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">8</td>
+                <td class="chiffre">4</td>
+                <td class="chiffre">24</td>
+              </tr>
+              <tr>
+                <th scope="row" class="chiffre">3</th>
+                <td>Toulouse Orion</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">7</td>
+                <td class="chiffre">5</td>
+                <td class="chiffre">21</td>
+              </tr>
+              <tr>
+                <th scope="row" class="chiffre">4</th>
+                <td>Pau Ascent</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">5</td>
+                <td class="chiffre">7</td>
+                <td class="chiffre">15</td>
+              </tr>
+              <tr>
+                <th scope="row" class="chiffre">5</th>
+                <td>Limoges Vanguard</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">3</td>
+                <td class="chiffre">9</td>
+                <td class="chiffre">9</td>
+              </tr>
+              <tr>
+                <th scope="row" class="chiffre">6</th>
+                <td>Angouleme Forge</td>
+                <td class="chiffre">12</td>
+                <td class="chiffre">2</td>
+                <td class="chiffre">10</td>
+                <td class="chiffre">6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section bande-sombre">
+      <div class="conteneur duo">
+        <div>
+          <span class="surtitre">Diffusion</span>
+          <h2 style="margin:14px 0 16px">Tous les matchs en direct</h2>
+          <p style="color:var(--texte-2)">
+            Chaque rencontre officielle est diffusee sur la chaine Twitch du club, commentee par
+            Melvin et un invite. La rediffusion reste disponible quinze jours, puis un resume de
+            quinze minutes est publie sur YouTube.
+          </p>
+          <p style="margin-top:22px">
+            <a href="https://www.twitch.tv/vortexesport-officiel-nova" target="_blank" class="btn btn-secondaire">Ouvrir la chaine Twitch</a>
+          </p>
+        </div>
+        <div class="cadre-video">
+          <iframe src="https://player.twitch.tv/?channel=vortexesport-officiel-nova&parent=localhost" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div>
+          <div class="marque">
+            <img src="images/logo-vortex.svg" alt="" width="38" height="38">
+            <span class="marque-nom">VORTEX<span>.</span></span>
+          </div>
+          <p class="pied-intro">
+            Association loi 1901 fondee en 2019 a Bordeaux.
+            14 rue Fondaudege, 33000 Bordeaux.
+          </p>
+        </div>
+        <div>
+          <h4>Le club</h4>
+          <ul>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="matchs.html">Matchs</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions legales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialite</a></li>
+            <li><a href="cgv.html">Conditions generales de vente</a></li>
+            <li><a href="https://www.vortex-esport-boutique-officielle.fr/">Boutique partenaire</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous suivre</h4>
+          <ul>
+            <li><a href="https://www.twitch.tv/vortexesport-officiel-nova" target="_blank">Twitch</a></li>
+            <li><a href="https://x.com/vortexesport_bdx">X</a></li>
+            <li><a href="http://www.esport-nouvelle-aquitaine.fr/clubs/vortex">Ligue Nouvelle-Aquitaine</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Vortex_Esport_Club_Bordeaux_2019">Notre page Wikipedia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied-bas">
+        <span>&copy; 2026 Vortex Esport. Tous droits reserves.</span>
+        <span>Site realise par les etudiants du club.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
